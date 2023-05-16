@@ -6,7 +6,6 @@ let productArray = [];
 
 
 
-
 // ***** DOM WINDOWS ****
 let imgContainer = document.getElementById('img-container');
 let imgOne = document.getElementById('img-one');
@@ -17,7 +16,6 @@ let resultsList = document.getElementById('results-container');
 
 
 
-
 // **** CONSTRUCTOR FUNCTION ****
 function Product(name, imageExtension = 'jpg'){
   this.name = name;
@@ -25,7 +23,6 @@ function Product(name, imageExtension = 'jpg'){
   this.votes = 0;
   this.views = 0;
 }
-
 
 
 // **** HELPER FUNCTIONS / UTILITIES ****
@@ -57,7 +54,6 @@ function renderImgs(){
   productArray[imageTwoIndex].views++;
   productArray[imageThreeIndex].views++;
 }
-
 
 
 
