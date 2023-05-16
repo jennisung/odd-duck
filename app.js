@@ -1,6 +1,6 @@
 'use strict';
 
-// ***** GLOBALS ******
+// GLOBALS  //
 
 let votingRounds = 25;
 let duckArray = [];
@@ -28,11 +28,72 @@ function randomIndexGenerator(){
   return Math.floor(Math.random() * duckArray.length);
 }
 
-function renderImgs(){
+// Three unique products
+function renderImages(){
   let imageOneIndex = randomIndexGenerator();
   let imageTwoIndex = randomIndexGenerator();
   let imageThreeIndex = randomIndexGenerator();
 }
+
+// fix
+while(imageOneIndex === imageTwoIndex){
+  imageTwoIndex = randomIndexGenerator();
+}
+
+while(imageOneIndex === imageTwoIndex || imageOneIndex === imageThreeIndex || imageTwoIndex === imageThreeIndex){
+  imageTwoIndex = randomIndexGenerator();
+  imageThreeIndex = randomIndexGenerator();
+}
+
+//end fix
+
+imageOne.src = duckArray[imageOneIndex].image;
+imageOne.title = duckArray[imageOneIndex].name;
+
+imageTwo.src = duckArray[imageTwoIndex].image;
+imageTwo.title = duckArray[imageTwoIndex].name;
+
+imageThree.src = duckArray[imageThreeIndex].image;
+imageThree.title = duckArray[imageThreeIndex].name;
+
+// DONE: Increase the goats views
+duckArray[imageOneIndex].views++;
+duckArray[imageTwoIndex].views++;
+duckArray[imageThreeIndex].views++;
+}
+
+// **** EVENT HANDLERS ****
+function handleImgClick(event){
+
+let imageClicked = event.target.title;
+
+for(let i = 0; i < duckArray.length; i++){
+  if(imageClicked === duckArray[i].name){
+    duckArray[i].votes++;
+    votingRounds--;
+    renderImages();
+  }
+}
+if(votingRounds === 0){
+  imageContainer.removeEventListener('click', handleImgClick);
+}
+
+}
+
+function handleShowResults(){
+if(votingRounds === 0){
+  for(let i = 0; i < goatArray.length; i++){
+    let duckListItem = document.createElement('li');
+
+    duckListItem.textContent = `${duckArray[i].name} - Votes: ${duckArray[i].votes} & Views: ${duckArray[i].views}`;
+
+    resultList.appendChild(duckListItem);
+  }
+  resultButton.removeEventListener('click', handleShowResults);
+}
+}
+
+//
 
 
 
@@ -60,7 +121,7 @@ let wineglass = new Item('wine-glass');
 
 duckArray.push(bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dogDuck, dragon, pen, petSweep, scissors, shark, sweep, tauntaun, unicorn, watercan, wineglass);
 
-renderImgs();
+renderImages();
 
 imageContainer.addEventListener('click', handleImgClick);
 resultButton.addEventListener('click', handleShowResults);
