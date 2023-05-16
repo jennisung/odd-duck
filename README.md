@@ -15,8 +15,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
-
+![access-image](img/access-image.png)
 ### Reflections and Comments
 
 * Consider including the answers to your daily journal and submission questions here
