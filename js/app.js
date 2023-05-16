@@ -9,8 +9,8 @@ let duckArray = [];
 let imageContainer = document.getElementById('img-container');
 let imageOne = document.getElementById('img-one');
 let imageTwo = document.getElementById('img-two');
-let imageThree = document.getElementById('img-two');
-let resultButton = document.getElementById('results-button');
+let imageThree = document.getElementById('img-three');
+let resultButton = document.getElementById('show-results-btn');
 let resultList = document.getElementById('results-container');
 
 // **** CONSTRUCTOR FUNCTION ****
@@ -36,10 +36,6 @@ function renderImages(){
 }
 
 // fix
-while(imageOneIndex === imageTwoIndex){
-  imageTwoIndex = randomIndexGenerator();
-}
-
 while(imageOneIndex === imageTwoIndex || imageOneIndex === imageThreeIndex || imageTwoIndex === imageThreeIndex){
   imageTwoIndex = randomIndexGenerator();
   imageThreeIndex = randomIndexGenerator();
@@ -61,6 +57,7 @@ duckArray[imageOneIndex].views++;
 duckArray[imageTwoIndex].views++;
 duckArray[imageThreeIndex].views++;
 }
+
 
 // **** EVENT HANDLERS ****
 function handleImgClick(event){
@@ -125,3 +122,9 @@ renderImages();
 
 imageContainer.addEventListener('click', handleImgClick);
 resultButton.addEventListener('click', handleShowResults);
+
+
+
+
+
+

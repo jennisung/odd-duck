@@ -1,0 +1,42 @@
+body {
+  background-color:  #ffb39c;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(255, 238, 0);
+  font-family: 'Crimson Text', serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+ul, li {
+  background-color: rgb(131, 136, 208);
+  padding: 10px;
+ border: 3px ;
+
+}
+
+button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 20px;
+  box-shadow: #c50e88 4px 4px 0 0;
+  color: #b81135;
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10pxl;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+
+
+
