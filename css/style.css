@@ -11,12 +11,32 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: 'Crimson Text', serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
 
-ul, li {
-  background-color: rgb(131, 136, 208);
-  padding: 10px;
- border: 3px ;
+  }
 
+#img-one {
+  width: 250px;
+}
+
+#img-two {
+  width: 250px;
+  height:250px;
+
+}
+
+#img-three{
+width: 250px; 
+} 
+
+#img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 button {
@@ -32,9 +52,11 @@ button {
   padding-left: 10pxl;
   line-height: 50px;
   text-align: center;
-  text-decoration: none;
-
 }
+ 
+
+
+
 
 
 
