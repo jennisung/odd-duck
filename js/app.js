@@ -39,7 +39,7 @@ function indexGenerator(){
 let indexArray = [];
 
 
-function renderImgs(){
+function renderImgs() {
 console.log('index Array start of func: ', indexArray);
   // let imageOneIndex = indexGenerator();
   // let imageTwoIndex = indexGenerator();
@@ -48,12 +48,14 @@ console.log('index Array start of func: ', indexArray);
     let randomNumber = indexGenerator();
     if (!indexArray.includes(randomNumber)) {
       indexArray.push(randomNumber);
-   }
+    }
 }
+
+
 
 console.log('index Array end of while loop: ', indexArray);
 
-  let imageOneIndex = indexArray.pop();
+  let imageOneIndex  = indexArray.shift();
   let imageTwoIndex = indexArray.pop();
   let imageThreeIndex = indexArray.pop();
 
@@ -75,6 +77,7 @@ console.log('index Array end of while loop: ', indexArray);
   productArray[imageOneIndex].views++;
   productArray[imageTwoIndex].views++;
   productArray[imageThreeIndex].views++;
+
 }
 
 function renderChart() {
