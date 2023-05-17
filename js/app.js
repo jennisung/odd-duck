@@ -16,6 +16,14 @@ let resultsList = document.getElementById('results-container');
 
 
 
+
+// ***** CANVAS ELEMENT ***** LAB12
+let ctx = document.getElementById('my-chart');
+
+
+
+
+
 // **** CONSTRUCTOR FUNCTION ****
 function Product(name, imageExtension = 'jpg'){
   this.name = name;
@@ -55,6 +63,48 @@ function renderImgs(){
   productArray[imageThreeIndex].views++;
 }
 
+function renderChart() {
+  let productNames = [];
+  let productViews = [];
+  let voting =[];
+
+  for (let i=0; i < productArray.length; i++) {
+    productNames.push(productArray[i].name);
+    productViews.push(productArray[i].views);
+    voting.push(productArray[i].votes);
+}
+
+  let chartObj = {
+    type: 'bar',
+    data: {
+      labels: productNames,
+      datasets: [{
+        label: 'Number of Views',
+        data: productViews,
+        borderWidth: 5,
+        backgroundColor: 'blue',
+        borderColor: 'blue'
+      },
+      {
+        label: 'Number of Votes',
+        data: voting,
+        borderWidth: 5,
+        backgroundColor: 'red',
+        borderColor: 'red'
+      }
+      ]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+};
+
+new Chart(ctx, chartObj);
+}
 
 
 // **** EVENT HANDLERS ****
@@ -79,16 +129,17 @@ function handleImgClick(event){
 
 function handleShowResults(){
   if(userVotes === 0){
-    for(let i = 0; i < productArray.length; i++){
-      let goatListItem = document.createElement('li');
+    renderChart();
+    // for(let i = 0; i < productArray.length; i++){
+    //   let goatListItem = document.createElement('li');
 
-      goatListItem.textContent = `${productArray[i].name} - Votes: ${productArray[i].votes} & Views: ${productArray[i].views}`;
+    //   goatListItem.textContent = `${productArray[i].name} - Votes: ${productArray[i].votes} & Views: ${productArray[i].views}`;
 
-      resultsList.appendChild(goatListItem);
-    }
-    resultBtn.removeEventListener('click', handleShowResults);
+    //   resultsList.appendChild(goatListItem);
   }
+  resultBtn.removeEventListener('click', handleShowResults);
 }
+
 
 // **** EXECUTABLE CODE *****
 let bag = new Product('bag');

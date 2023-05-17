@@ -11,7 +11,7 @@
 <body>
   <h1>Odd Duck Product</h1>
   <main>
-    <h2>Select a Images from Below</h2>
+    <h2>Select a Images from Below <br> After 25 rounds you will be able to click on the "View Results" button to see your results </h2>
     <section id="img-container">
       <img id="img-one" src="" alt="">
       <img id="img-two" src="" alt="">
@@ -19,8 +19,15 @@
     </section>
 
     <button type="button" id="show-results-btn">View Results</button>
-    <ul id="results-container"></ul>
+    <!-- <ul id="results-container"></ul> -->
+
+    <div id="results-container">
+      <canvas id="my-chart"></canvas>
+      
+    </div>
+
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

@@ -45,14 +45,38 @@ button {
   border-radius: 20px;
   box-shadow: #c50e88 4px 4px 0 0;
   color: #b81135;
-  display: inline-block;
   font-size: 15px;
   padding: 5px;
-  padding-right: 10px;
-  padding-left: 10pxl;
   line-height: 50px;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
+
+
+li {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  border: 2px solid;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+ }
+
+
+ main section {
+  background-color: rgb(222, 197, 197);
+  border: 2px solid ;
+  border-color: #b81135;
+  display: flex;
+  justify-content: center;
+}
+
  
 
 
