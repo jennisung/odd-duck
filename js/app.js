@@ -51,8 +51,6 @@ function indexGenerator(){
 // console.log(randomizedArray);
 
 
-
-
 //two unique rounds: Lab 12
 
 
@@ -72,7 +70,7 @@ function renderImgs() {
   }
 
 
-console.log('index Array end of while loop: ', indexArray);
+  console.log('index Array end of while loop: ', indexArray);
 
 
   let imageOneIndex  = indexArray.shift();
