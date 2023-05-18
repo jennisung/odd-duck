@@ -12,7 +12,7 @@ let imgOne = document.getElementById('img-one');
 let imgTwo = document.getElementById('img-two');
 let imgThree = document.getElementById('img-three');
 let resultBtn = document.getElementById('show-results-btn');
-let aggregateVotes = document.getElementById('aggregate-Votes');
+let aggregatevotes = document.getElementById('aggregate-votes');
 
 
 // ***** CANVAS ELEMENT ***** LAB12
@@ -100,7 +100,7 @@ function renderImgs() {
   productArray[imageThreeIndex].views++;
 
 
-  aggregateVotes.textContent = userVotes;
+  aggregatevotes.textContent = userVotes;
 
 }
 
