@@ -199,9 +199,6 @@ function handleShowResults(){
   resultBtn.removeEventListener('click', handleShowResults);
 }
 
-// Local storage here//
-
-
 
 // get it from local storage//
 let retrievedProducts = localStorage.getItem('myProduct');
@@ -247,5 +244,8 @@ renderImgs();
 
 imgContainer.addEventListener('click', handleImgClick);
 resultBtn.addEventListener('click', handleShowResults);
+
+
+
 
 
