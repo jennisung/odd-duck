@@ -1,22 +1,17 @@
 # odd-duck
 
-# LAB - Class 11
+# LAB 15b
 
 ## Project Name
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This website was created using JavaScript, HTML, and CSS. It keeps track of the number of times a user clicks on a particular image.
 
-### Author: Student/Group Name
+### Author: Jennifer Sung
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [ChatGbt](https://chat.openai.com/)
 
 ### Lighthouse Accessibility Report Score
 
 ![access-image](img/access-image.png)
-### Reflections and Comments
-
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
