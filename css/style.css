@@ -1,63 +1,60 @@
 body {
-  background-color:  #ffb39c;
+  background-color:  #d2cce7;
 }
 
 h1 {
   font-size: 40px;
-  color: rgb(255, 238, 0);
-  font-family: 'Crimson Text', serif;
-  margin-bottom: 20px;
+  color: rgb(16, 15, 3);
+  font-family: 'Ubuntu', sans-serif;  margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
+  padding-top: 50px;
 }
 
 h2 {
-  font-family: 'Crimson Text', serif;
-  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;  margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
 
   }
 
  p {
-  font-family: 'Crimson Text', serif;
-  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;  margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
 }
 
 #img-one {
-  width: 250px;
+  height:400px;
 }
 
 #img-two {
-  width: 250px;
-  height:250px;
+  height:400px;
 
 }
 
 #img-three{
-width: 250px; 
+  height:400px; 
 } 
 
 #img-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 4px double;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 button {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
-  border-radius: 20px;
-  box-shadow: #c50e88 4px 4px 0 0;
-  color: #b81135;
-  font-size: 15px;
-  padding: 5px;
-  line-height: 50px;
+  background-color: #6944ec;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -79,7 +76,7 @@ li {
  main section {
   background-color: rgb(222, 197, 197);
   border: 2px solid ;
-  border-color: #b81135;
+  border-color: #111010;
   display: flex;
   justify-content: center;
 }
