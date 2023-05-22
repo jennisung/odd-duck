@@ -36,25 +36,7 @@ function indexGenerator(){
 }
 
 
-// function shuffleArray(array) {
-//   for (let i = productArray.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [productArray[i], productArray[j]] = [productArray[j], productArray[i]];
-//   }
-//   return array;
-// }
-
-
-// const myArray = [];
-// const randomizedArray = shuffleArray(productArray);
-// console.log(randomizedArray);
-
-
-//two unique rounds: Lab 12
-
-
 let indexArray = [];
-
 
 function renderImgs() {
   console.log('index Array start of func: ', indexArray);
@@ -187,14 +169,6 @@ function handleImgClick(event){
 function handleShowResults(){
   if(userVotes === 0){
     renderChart();
-    // for(let i = 0; i < productArray.length; i++){
-    //   let goatListItem = document.createElement('li');
-
-
-    //   goatListItem.textContent = `${productArray[i].name} - Votes: ${productArray[i].votes} & Views: ${productArray[i].views}`;
-
-
-    //   resultsList.appendChild(goatListItem);
   }
   resultBtn.removeEventListener('click', handleShowResults);
 }
